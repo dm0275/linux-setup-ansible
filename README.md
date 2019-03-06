@@ -1,4 +1,4 @@
-Role Name
+linux-setup-ansible
 =========
 
 This role sets up a linux workstation.
