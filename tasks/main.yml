@@ -15,7 +15,8 @@
   shell: "{{user_home}}/install.sh"
   args:
     creates: "{{user_home}}/.zshrc"
-  become: "{{user}}"
+  become: true
+  become_user: "{{user}}"
 
 - name: Configure user
   user:
