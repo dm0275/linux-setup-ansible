@@ -13,6 +13,9 @@
 
 - name: Run oh-my-zsh installer
   shell: "{{user_home}}/install.sh"
+  args:
+    creates: "{{user_home}}/.zshrc"
+  ignore_errors: true
   become: true
   become_user: "{{user}}"
 
